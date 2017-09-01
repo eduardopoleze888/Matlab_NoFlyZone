@@ -29,7 +29,7 @@ elseif v0 < a0pow2_2J;
         J2 = J;
         t3 = 0;
         J3 = 0;
-        v1 = t1*(v0 + a_lim)/2;
+        v1 = t1*(a0 + a_lim)/2 + v0;
         delta_s = gama(J1, a0, v0, t1) + gama(J2, a_lim, v1, t2);
     else
         J1 = J;
